@@ -23,17 +23,18 @@
   padding: 0px;
 }
 
-/* Whole */
+
+/* ------ Whole -------- */
  .one-whole {
   width: 100%;
 }
 
-/* Halves */
+/* ------ Halves ------- */
 .one-half, .two-quarters, .three-sixths {
   width: 50%;
 }
 
-/* Thirds */
+/* ------ Thirds ------- */
 .one-third, .two-sixths {
   width: 33.333%;
 }
@@ -41,7 +42,7 @@
   width: 66.666%;
 }
 
-/* Quarters */
+/* ------ Quarters ----- */
 .one-quarter {
   width: 25%;
 }
@@ -49,7 +50,21 @@
   width: 75%;
 }
 
-/* Sixths */
+/* ------ Fifths ------- */
+.one-fifth {
+  width: 20%;
+}
+.two-fifths {
+  width: 40%;
+}
+.three-fifths {
+  width: 60%;
+}
+.four-fifths {
+  width: 80%;
+}
+
+/* ------ Sixths ------- */
 .one-sixth {
   width: 16.666%;
 }
@@ -68,7 +83,7 @@
 }
 
 @media only screen and (max-width: 580px) {
-  .one-third, .two-thirds {
+  .one-third, .two-thirds, .one-fifth, .two-fifths, .three-fifths, .four-fifths {
     width: 100%;
   }
 }
