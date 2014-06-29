@@ -1,6 +1,19 @@
+@import 'reset.css';
+@import 'grid';
+
 html { 
 	font: normal 14px Arial, sans-serif;
 	color: #222;
+}
+
+body {
+	min-width: 300px;
+}
+
+.wrap {
+	max-width: 1024px;
+	width: 95%;
+	margin: 0 auto;
 }
 
 strong { font-weight: bold; }
@@ -21,19 +34,4 @@ h1, h2, h3, h4, h5, h6 {
 p { 
 	font: normal 1rem Arial, sans-serif;
 	padding-bottom: 1rem;
-}
-
-
-@media all and (max-width: 960px) {
-	
-}
-
-@media only screen and (max-width: 768px) {
-	html {
-		font: normal 16px Arial, sans-serif;
-	}
-}
-
-@media only screen and (max-width: 480px) {
-
 }
