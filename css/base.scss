@@ -1,9 +1,21 @@
-@import 'reset.css';
-@import 'grid';
-
 html { 
 	font: normal 14px Arial, sans-serif;
 	color: #222;
+}
+
+strong { font-weight: bold; }
+em { font-style: italic; }
+u { text-decoration: underline; }
+
+h1 { font: bold 46px Arial, sans-serif; }
+h2 { font: bold 42px Arial, sans-serif; }
+h3 { font: bold 36px Arial, sans-serif; }
+h4 { font: bold 30px Arial, sans-serif; }
+h5 { font: bold 26px Arial, sans-serif; }
+h6 { font: bold 20px Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6, p {
+	padding-bottom: 12px;
 }
 
 body {
@@ -14,24 +26,4 @@ body {
 	max-width: 1024px;
 	width: 95%;
 	margin: 0 auto;
-}
-
-strong { font-weight: bold; }
-em { font-style: italic; }
-u { text-decoration: underline; }
-
-h1 { font: bold 3.4rem Arial, sans-serif; }
-h2 { font: bold 3rem Arial, sans-serif; }
-h3 { font: bold 2.6rem Arial, sans-serif; }
-h4 { font: bold 2.2rem Arial, sans-serif; }
-h5 { font: bold 1.8rem Arial, sans-serif; }
-h6 { font: bold 1.4rem Arial, sans-serif; }
-
-h1, h2, h3, h4, h5, h6 {
-	padding-bottom: 0.65rem;
-}
-
-p { 
-	font: normal 1rem Arial, sans-serif;
-	padding-bottom: 1rem;
 }
