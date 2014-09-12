@@ -30,17 +30,19 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: [
-                    'js/libs/*.js',
-                    'js/*.js'
+                    'js/libs/jquery.min.js',
+                    'js/libs/placeholders.js',
+                    'js/libs/dropkick.js',
+                    'js/page_scripts.js'
                 ],
-                dest: 'js/production.js',
+                dest: 'js/global.js',
             }
         },
 
         uglify: {
             build: {
-                src: 'js/page_scripts.js',
-                dest: 'js/page_scripts.min.js'
+                src: 'js/global.js',
+                dest: 'js/global.min.js'
             }
         },
 
@@ -60,15 +62,15 @@ module.exports = function(grunt) {
                 livereload: true,
             },
             css: {
-                files: ['css/*.scss', 'style.scss'],
+                files: ['css/**/*.scss', 'css/*.scss', 'style.scss'],
                 tasks: ['sass', 'autoprefixer'],
                 options: {
                     spawn: false,
                 }
             },
             scripts: {
-                files: ['js/*.js'],
-                tasks: ['uglify'],
+                files: ['js/**/*.js', 'js/*.js'],
+                tasks: ['concat', 'uglify'],
                 options: {
                     spawn: false,
                 },
@@ -92,6 +94,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['sass', 'autoprefixer', 'uglify', 'imagemin', 'watch']);
+    grunt.registerTask('default', ['sass', 'autoprefixer', 'concat', 'uglify', 'imagemin', 'watch']);
 
 };

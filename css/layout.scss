@@ -1,0 +1,14 @@
+.page {
+  	min-height: 100%;
+  	margin-bottom: -150px;
+
+  	&:after {
+		content: "";
+		height: 150px; 
+		display: block;
+	}
+}
+
+.page-footer {
+	height: 150px;
+}
