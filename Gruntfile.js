@@ -31,8 +31,8 @@ module.exports = function(grunt) {
             dist: {
                 src: [
                     'js/libs/jquery.min.js',
-                    'js/libs/placeholders.js',
                     'js/libs/dropkick.js',
+                    'js/libs/placeholders.js',
                     'js/page_scripts.js'
                 ],
                 dest: 'js/global.js',
