@@ -31,7 +31,6 @@ module.exports = function(grunt) {
             dist: {
                 src: [
                     'js/libs/jquery.min.js',
-                    'js/libs/dropkick.js',
                     'js/libs/placeholders.js',
                     'js/page_scripts.js'
                 ],
@@ -60,6 +59,9 @@ module.exports = function(grunt) {
         watch: {
             options: {
                 livereload: true,
+            },
+            grunt: { 
+                files: ['Gruntfile.js'] 
             },
             css: {
                 files: ['css/**/*.scss', 'css/*.scss', 'style.scss'],
